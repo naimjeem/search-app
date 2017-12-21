@@ -1,7 +1,7 @@
-const stack = (searchField) => {
+const search = (url) => {
   const copyText = document.querySelector("#myInput");
   copyText.select();
   document.execCommand("Copy");
-	window.open('https://stackoverflow.com/search?q=' + copyText.value, '_blank');
+	window.open(url + copyText.value, '_blank');
   console.log("Copied the text: " + copyText.value);
 }
